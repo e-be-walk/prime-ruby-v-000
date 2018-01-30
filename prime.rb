@@ -9,3 +9,4 @@ def prime? n
   end
   not foundDivider
 end
+end
