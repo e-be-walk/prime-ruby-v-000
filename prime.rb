@@ -5,10 +5,10 @@ def prime?(int)
   if int <= 1
     false
   else
-    binding.pry
+
     list_of_num = *(2..int/2)
     divisor = list_of_num.detect {|x| number % x == 0}
-
+    binding.pry
     if divisor
       false
     else
