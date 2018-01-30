@@ -1,6 +1,12 @@
 # Add  code here!
-def prime?()
-  Prime.each(1..101013) do |prime|
-    p prime
+def prime? n 
+  foundDivider = false
+  for d in 2..(n-1)
+    if (n % d) == 0
+      return false
+    end
+  elsif 
+    foundDivider = ((n % d) == 0) || foundDivider
   end
+  not foundDivider
 end
