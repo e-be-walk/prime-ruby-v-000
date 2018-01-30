@@ -1,12 +1,18 @@
+require 'pry'
 # Add  code here!
-def prime? n
-  foundDivider = false
-  for d in 2..(n-1)
-    if (n % d) == 0
-      return false
-  elsif
-    foundDivider = ((n % d) == 0) || foundDivider
+
+def prime?(int)
+  if int <= 1
+    false
+  else
+
+    list_of_num = *(2..int/2)
+    divisor = list_of_num.detect {|x| number % x == 0}
+
+    if divisor
+      false
+    else
+      true
+    end
   end
-  not foundDivider
-end
 end
